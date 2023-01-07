@@ -4,11 +4,17 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin>>s;
-    string t=s;
-    reverse(s.begin(),s.end());
-    cout<<s<<t<<endl;
+    ll n,x,y;
+    cin>>n;
+    ll sum = 0;
+    ll maxi = 0;
+    while (n--)
+    {
+        cin>>x>>y;
+        sum+=min(x,y);
+        maxi = max(maxi,max(x,y));
+    }
+    cout<<2*(sum+maxi)<<endl;
 }
 int main()
 {

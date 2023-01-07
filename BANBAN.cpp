@@ -4,11 +4,16 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin>>s;
-    string t=s;
-    reverse(s.begin(),s.end());
-    cout<<s<<t<<endl;
+    int n;
+    cin >> n;
+    cout << n / 2 + n % 2 << endl;
+    int l = 1, r = 3 * n;
+    while (l < r)
+    {
+        cout << l << " " << r << endl;
+        l += 3;
+        r -= 3;
+    }
 }
 int main()
 {

@@ -4,11 +4,22 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin>>s;
-    string t=s;
-    reverse(s.begin(),s.end());
-    cout<<s<<t<<endl;
+    int n;
+    cin>>n;
+    if(n<=2){
+        cout<<1<<endl;
+    }
+    else{
+        if(n%2 == 0){
+            cout<<n/2<<endl;
+        }
+        else
+        {
+            cout<<(n/2)+1<<endl;
+        }
+        
+    }
+    
 }
 int main()
 {

@@ -4,11 +4,7 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin>>s;
-    string t=s;
-    reverse(s.begin(),s.end());
-    cout<<s<<t<<endl;
+    
 }
 int main()
 {

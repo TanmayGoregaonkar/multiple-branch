@@ -4,11 +4,19 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin>>s;
-    string t=s;
-    reverse(s.begin(),s.end());
-    cout<<s<<t<<endl;
+    int s;
+    cin >> s;
+
+    ll x=1;
+    ll temp=0;
+    ll cnt=0;
+    while(temp<s)
+    {
+        temp+=x;
+        x+=2;
+        cnt++;
+    }
+    cout<<cnt<<endl;
 }
 int main()
 {
